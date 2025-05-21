@@ -9,4 +9,8 @@
     local all       all     trust
     '';
   };
+
+  environment.systemPackages = with pkgs; [
+    haskellPackages.cabal-gild
+  ];
 }
