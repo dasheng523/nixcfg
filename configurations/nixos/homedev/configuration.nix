@@ -41,10 +41,10 @@ in
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings = {
     substituters = [
-      "https://nixcache.reflex-frp.org"
       "https://mirrors.ustc.edu.cn/nix-channels/store" # 科学技术大学镜像
       "https://mirror.sjtu.edu.cn/nix-channels/store" # 上海交通大学的镜像源
       "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"  # 清华大学的镜像源
+      "https://nixcache.reflex-frp.org"
       "https://cache.nixos.org/"                               # 官方作为备用
       # ... 其他你需要的 cachix 缓存 ...
     ];
