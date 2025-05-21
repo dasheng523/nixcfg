@@ -12,5 +12,8 @@
 
   environment.systemPackages = with pkgs; [
     haskellPackages.cabal-gild
+    haskellPackages.hlint
+    cabal-install
+    ghc
   ];
 }
