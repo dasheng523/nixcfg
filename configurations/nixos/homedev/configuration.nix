@@ -42,7 +42,9 @@ in
   nix.settings = {
     substituters = [
       "https://nixcache.reflex-frp.org"
-      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" # TUNA 镜像
+      "https://mirrors.ustc.edu.cn/nix-channels/store" # 科学技术大学镜像
+      "https://mirror.sjtu.edu.cn/nix-channels/store" # 上海交通大学的镜像源
+      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"  # 清华大学的镜像源
       "https://cache.nixos.org/"                               # 官方作为备用
       # ... 其他你需要的 cachix 缓存 ...
     ];
