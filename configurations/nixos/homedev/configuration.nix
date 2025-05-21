@@ -88,7 +88,7 @@ in
     isNormalUser = true;
     uid = 1000;
     description = "yesheng";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "postgres"];
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINukcsirEekCOG/jNb3STPHnMIiB+fpqQGeAfVQJ323B Gitee SSH Key"
     ];
