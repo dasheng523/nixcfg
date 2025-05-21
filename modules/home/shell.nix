@@ -12,6 +12,7 @@
     # For macOS's default shell.
     zsh = {
       enable = true;
+      enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
       envExtra = ''
@@ -26,6 +27,14 @@
       logoutExtra = ''
         # Custom ~/.zlogout goes here
       '';
+      shellAliases = {
+        ls = "eza";
+        ll = "eza -l --git --header --icons";
+        la = "eza -la";
+        lt = "eza --tree";
+        ".." = "cd ..";
+        "..." = "cd ../..";
+      };
     };
 
     # Type `z <pat>` to cd to some directory

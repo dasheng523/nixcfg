@@ -9,7 +9,7 @@ let
   # 推荐在较新的 NixOS 版本 (如 24.05+) 上使用 nix-ld-rs 以获得更好的兼容性
   nix-ld-package = pkgs.nix-ld-rs;
   proxyServer = "http://127.0.0.1:7890";
-  noProxyDomains = "localhost,127.0.0.1,mirrors.tuna.tsinghua.edu.cn";
+  noProxyDomains = "localhost,127.0.0.1,mirrors.tuna.tsinghua.edu.cn,mirror.sjtu.edu.cn,mirrors.ustc.edu.cn";
 in
 {
   nixpkgs.hostPlatform = "x86_64-linux";
@@ -33,18 +33,8 @@ in
   };
 
   networking.proxy = {
-    # 这个会同时设置 HTTP_PROXY, HTTPS_PROXY, FTP_PROXY
     default = proxyServer;
-
-    # 或者你可以单独设置：
-    # httpProxy = proxyServer;
-    # httpsProxy = proxyServer;
-    # ftpProxy = proxyServer; # 如果需要
-
-    # 设置不走代理的地址
     noProxy = noProxyDomains;
-
-    # 注意：NixOS 模块会自动处理大小写 (e.g., https_proxy 和 HTTPS_PROXY)
   };
 
   # Nix 相关设置
@@ -87,6 +77,7 @@ in
     htop
     tmux
     unzip
+    eza
   ];
 
 
