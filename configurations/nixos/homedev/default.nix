@@ -12,5 +12,6 @@ in
     # self.nixosModules.gui
     nixos-wsl.nixosModules.wsl
     ./configuration.nix
+    ./dev.nix
   ];
 }
