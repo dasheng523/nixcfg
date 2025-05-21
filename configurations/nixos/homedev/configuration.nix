@@ -94,5 +94,5 @@ in
     ];
   };
 
-  networking.hostName = "nixos";
+  networking.hostName = "homedev";
 }
