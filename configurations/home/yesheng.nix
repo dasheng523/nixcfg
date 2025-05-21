@@ -13,7 +13,7 @@ in
   me = {
     username = "yesheng";
     fullname = "yesheng";
-    email = "johndoe@nixos.com";
+    email = "dasheng523@163.com";
   };
 
   home.stateVersion = "24.11";
