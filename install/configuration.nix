@@ -53,6 +53,7 @@ in
   environment.systemPackages = with pkgs; [
     git
     vim
+    python
   ];
 
   # 用户 "yesheng" 的配置

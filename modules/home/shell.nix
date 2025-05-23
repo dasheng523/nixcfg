@@ -17,6 +17,7 @@
       syntaxHighlighting.enable = true;
       envExtra = ''
         # Custom ~/.zshenv goes here
+        source ~/venv/bin/activate
       '';
       profileExtra = ''
         # Custom ~/.zprofile goes here
