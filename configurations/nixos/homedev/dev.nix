@@ -17,7 +17,5 @@
     ghc
     nodejs
     python3Packages.python
-    python3Packages.numpy
-    python3Packages.venvShellHook
   ];
 }
