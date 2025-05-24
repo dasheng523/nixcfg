@@ -6,6 +6,7 @@
       enable = true;
       initExtra = ''
         # Custom bash profile goes here
+        source ~/venv/bin/activate
       '';
     };
 
@@ -17,10 +18,10 @@
       syntaxHighlighting.enable = true;
       envExtra = ''
         # Custom ~/.zshenv goes here
-        source ~/venv/bin/activate
       '';
       profileExtra = ''
         # Custom ~/.zprofile goes here
+        source ~/venv/bin/activate
       '';
       loginExtra = ''
         # Custom ~/.zlogin goes here

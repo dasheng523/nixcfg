@@ -17,5 +17,7 @@
     ghc
     nodejs
     python3Packages.python
+    haskell-language-server
+    sqlite
   ];
 }
