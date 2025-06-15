@@ -19,5 +19,6 @@
     python3Packages.python
     haskell-language-server
     sqlite
+    pkg-config
   ];
 }
