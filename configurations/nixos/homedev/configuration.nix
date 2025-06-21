@@ -67,6 +67,18 @@ in
     # automount.enabled = lib.mkDefault true;
   };
 
+  fonts.packages = with pkgs; [
+    # Maple Mono (Ligature TTF unhinted)
+    maple-mono.truetype
+    # Maple Mono NF (Ligature unhinted)
+    maple-mono.NF-unhinted
+    # Maple Mono NF CN (Ligature unhinted)
+    maple-mono.NF-CN-unhinted
+  ];
+  # 启用 emoji 支持
+  fonts.fontconfig.enable = true;
+  # 3. 配置 TTY 字体
+  console.font = "Maple Mono NF CN";
 
 
   # 系统全局安装的软件包
